@@ -49,4 +49,34 @@
     <servlet-name>Demo</servlet-name>
     <url-pattern>/Demo</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RegProcess</display-name>
+    <servlet-name>RegProcess</servlet-name>
+    <servlet-class>RegProcess</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegProcess</servlet-name>
+    <url-pattern>/RegProcess</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UserReg</display-name>
+    <servlet-name>UserReg</servlet-name>
+    <servlet-class>UserReg</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserReg</servlet-name>
+    <url-pattern>/UserReg</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AdminReg</display-name>
+    <servlet-name>AdminReg</servlet-name>
+    <servlet-class>AdminReg</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminReg</servlet-name>
+    <url-pattern>/AdminReg</url-pattern>
+  </servlet-mapping>
 </web-app>

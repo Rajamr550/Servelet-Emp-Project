@@ -13,7 +13,7 @@ public class Details extends HttpServlet {
 public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException,ServletException  {
     
 	  
-    response.setContentType("text/html");  
+   response.setContentType("text/html");  
    PrintWriter out = response.getWriter();  
      
   HttpSession session=request.getSession(false);  
@@ -23,13 +23,15 @@ public void doPost(HttpServletRequest request, HttpServletResponse response) thr
 
     //out.print("Hello ");  
 
-    out.println("Hello " + fname + " " +  lname);
-    out.println(" <br> ");
-    out.println("Age " + age);
-    out.println(" <br> ");
-    out.println("<a href='/One/success.html'><button>edit</button></a>");  
-    out.println(" <br> ");
-    out.println("<a href='/One/home.html'><button>home</button></a>");  
+//    out.println("Hello " + fname + " " +  lname);
+//    out.println(" <br> ");
+//    out.println("Age " + age);
+//    out.println(" <br> ");
+//    out.println("<a href='/One/success.html'><button>edit</button></a>");  
+//    out.println(" <br> ");
+//    out.println("<a href='/One/home.html'><button>home</button></a>");  
+  
+  response.sendRedirect("jsp/print.jsp");
     out.close();  
 
 } 
